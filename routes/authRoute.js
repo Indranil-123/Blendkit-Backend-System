@@ -5,7 +5,7 @@ const {restrictToLoggedIn} = require('../middleware/auth')
 
 userRouter.get('/register',authCrtl.UserRegister);
 userRouter.post('/login',authCrtl.UserLogin);
-userRouter.get('/dashboard',restrictToLoggedIn,authCrtl.Dashboard);
+userRouter.get('/dashboard',restrictToLoggedIn,UserCrtl.Dashboard);
 
 
 

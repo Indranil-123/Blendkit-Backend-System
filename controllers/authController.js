@@ -1,4 +1,4 @@
-var db = require('../models/config');
+var db = require('../config/config');
 const {v4 : uuid4} = require("uuid")
 const {setUser} = require('../service/auth')
 var User = db.user;
